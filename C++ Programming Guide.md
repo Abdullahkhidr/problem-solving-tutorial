@@ -66,7 +66,49 @@ int x = 1, y = 2, z = 3;
 ### Initialization Best Practices
 - ✅ Always initialize variables before use
 - ✅ Use meaningful variable names
-- ✅ Follow consistent naming conventions
+- ✅ Follow variable naming rules
+
+## C++ Variable Naming Rules and Best Practices 📝
+
+### 🚫 Rules: What You Cannot Do
+
+```cpp
+// ❌ INVALID Variable Names
+int 123num;        // Cannot start with a number
+int my name;       // Cannot contain spaces
+int my-score;      // Cannot use hyphens
+int for;           // Cannot use reserved keywords
+int class;         // Cannot use reserved keywords
+int my#variable;   // Cannot use special characters (except _)
+```
+
+### ✅ Rules: What You Can Do
+
+```cpp
+// ✅ VALID Variable Names
+int number123;     // Can contain numbers (not at start)
+int _score;        // Can start with underscore
+int myScore;       // Can use camelCase
+int my_score;      // Can use snake_case
+int score1;        // Can end with numbers
+int numberOfStudents;  // Can be descriptive
+```
+
+### 🔑 Reserved Keywords
+Cannot use these as variable names:
+```cpp
+auto     break    case     char      const    continue
+default  do       double   else      enum     extern
+float    for      goto     if        int      long
+register return   short    signed    sizeof   static
+struct   switch   typedef  union     unsigned void
+volatile while    bool     catch     class    const_cast
+delete   dynamic_cast      explicit  false    friend
+inline   mutable  namespace new      operator private
+protected public  reinterpret_cast   static_cast      template
+this     throw    true     try       typeid   typename
+using    virtual  wchar_t
+```
 
 ## 📚 String Operations
 
@@ -75,14 +117,6 @@ int x = 1, y = 2, z = 3;
 string name = "John";
 string fullName = name + " Doe";  // Concatenation
 int length = name.length();       // String length
-```
-
-### Common String Operations
-```cpp
-string text = "Hello World";
-text.substr(0, 5);      // Returns "Hello"
-text.find("World");     // Returns position 6
-text[0];               // Returns 'H'
 ```
 
 ## ➗ Operators
@@ -108,11 +142,6 @@ double result = x / y;  // Results in 2.5
 
 ### Common Uses
 ```cpp
-// Check if number is even
-if (number % 2 == 0) {
-    cout << "Even number";
-}
-
 // Get last digit
 int lastDigit = number % 10;
 
@@ -120,7 +149,7 @@ int lastDigit = number % 10;
 int angle = 400 % 360;  // Returns 40
 ```
 
-## 🔀 Compound Assignment
+## 🔀 Assignment Operators
 ```cpp
 int x = 10;
 x += 5;  // x = 15
@@ -146,19 +175,40 @@ int c = a++;  // c = 6, a = 7 (postfix)
 int age;
 string name;
 
-cout << "Enter your name: ";
-getline(cin, name);
+cout << "Enter your first name: ";
+cin >> name; // Mohamed
 
 cout << "Enter your age: ";
 cin >> age;
+```
+
+Or
+
+```cpp
+int age;
+string name;
+
+cin >> name >> age;
+```
+-----
+
+```cpp
+string name;
+
+cout << "Enter your full name: ";
+getline(cin, name); // Mohamed Ali
 ```
 
 ### Formatted Output
 ```cpp
 cout << "Name: " << name << "\n";
 cout << "Age: " << age << "\t";
-cout << fixed << setprecision(2);
-cout << "Price: $" << price << endl;
+```
+
+Or
+
+```cpp
+cout << "Name: " << name << "\n" << "Age: " << age << "\t";
 ```
 
 ### Special Characters
@@ -178,30 +228,17 @@ double fahrenheit = (celsius * 9/5) + 32;
 cout << celsius << "°C = " << fahrenheit << "°F\n";
 ```
 
-### Problem 2: Number Analyzer
-```cpp
-int number;
-cout << "Enter a number: ";
-cin >> number;
-
-cout << "Properties of " << number << ":\n";
-cout << "Even/Odd: " << (number % 2 == 0 ? "Even" : "Odd") << "\n";
-cout << "Positive/Negative: " << (number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero") << "\n";
-```
-
 ## 📌 Quick Tips
 
 1. 💡 Always initialize variables
 2. 💡 Use meaningful variable names
 3. 💡 Comment complex logic
-4. 💡 Test edge cases
 5. 💡 Format output for readability
 
 ## 🔍 Debug Techniques
 
-1. Print variable values at key points
-2. Use step-by-step execution
-3. Check for common errors:
+1. Use step-by-step execution
+2. Check for common errors:
    - Missing semicolons
    - Uninitialized variables
    - Integer division when float needed
