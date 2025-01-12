@@ -1,7 +1,7 @@
 # C++ Programming Guide 🚀
 *A comprehensive guide to core programming concepts*
 
-## 📘 Program Structure (Topic 14)
+## 📘 Program Structure
 
 ### Basic Program Template
 ```cpp
@@ -20,7 +20,7 @@ int main() {
 - 🔹 `int main()`: Entry point of program
 - 🔹 `return 0`: Indicates successful program completion
 
-## 📝 Comments (Topic 15)
+## 📝 Comments
 
 ### Types of Comments
 ```cpp
@@ -36,7 +36,7 @@ int main() {
 - ✅ Keep comments updated with code changes
 - ✅ Write clear, concise comments
 
-## 🔢 Data Types (Topic 16)
+## 🔢 Data Types
 
 ### Fundamental Data Types Table
 
@@ -49,7 +49,7 @@ int main() {
 | `char` | 1 byte | -128 to 127 | `char grade = 'A';` |
 | `bool` | 1 byte | true/false | `bool isActive = true;` |
 
-## 📝 Variable Declaration (Topics 17-19)
+## 📝 Variable Declaration
 
 ### Syntax Options
 ```cpp
@@ -68,7 +68,7 @@ int x = 1, y = 2, z = 3;
 - ✅ Use meaningful variable names
 - ✅ Follow consistent naming conventions
 
-## 📚 String Operations (Topic 21)
+## 📚 String Operations
 
 ### String Basics
 ```cpp
@@ -85,7 +85,7 @@ text.find("World");     // Returns position 6
 text[0];               // Returns 'H'
 ```
 
-## ➗ Operators (Topics 22-24)
+## ➗ Operators
 
 ### Arithmetic Operators
 ```cpp
@@ -104,7 +104,7 @@ int y = 2;
 double result = x / y;  // Results in 2.5
 ```
 
-## 🔄 Modulus Operations (Topic 25)
+## 🔄 Modulus Operations
 
 ### Common Uses
 ```cpp
@@ -120,7 +120,7 @@ int lastDigit = number % 10;
 int angle = 400 % 360;  // Returns 40
 ```
 
-## 🔀 Compound Assignment (Topic 26)
+## 🔀 Compound Assignment
 ```cpp
 int x = 10;
 x += 5;  // x = 15
@@ -130,7 +130,7 @@ x /= 4;  // x = 6
 x %= 4;  // x = 2
 ```
 
-## ⬆️ Increment/Decrement (Topics 28-29)
+## ⬆️ Increment/Decrement
 
 ### Prefix vs Postfix
 ```cpp
@@ -139,7 +139,7 @@ int b = ++a;  // a = 6, b = 6 (prefix)
 int c = a++;  // c = 6, a = 7 (postfix)
 ```
 
-## 📥 Input/Output (Topics 31-33)
+## 📥 Input/Output
 
 ### Basic Input
 ```cpp
@@ -208,5 +208,3 @@ cout << "Positive/Negative: " << (number > 0 ? "Positive" : number < 0 ? "Negati
    - Off-by-one errors
 
 ---
-
-Need any clarification or more examples for any topic? Feel free to ask! 🚀
